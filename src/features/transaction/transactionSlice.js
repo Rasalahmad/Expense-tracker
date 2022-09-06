@@ -54,12 +54,12 @@ const transactionSlice = createSlice({
         state.isLoading = true;
         state.isError = false;
       })
-      .builder.addCase(fetchTransactions.fulfilled, (state, action) => {
+      .addCase(fetchTransactions.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isError = false;
         state.transactions = action.payload;
       })
-      .builder.addCase(fetchTransactions.rejected, (state, action) => {
+      .addCase(fetchTransactions.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.error = action.error?.message;
@@ -70,12 +70,12 @@ const transactionSlice = createSlice({
         state.isLoading = true;
         state.isError = false;
       })
-      .builder.addCase(addTransaction.fulfilled, (state, action) => {
+      .addCase(addTransaction.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isError = false;
         state.transactions.push(action.payload);
       })
-      .builder.addCase(addTransaction.rejected, (state, action) => {
+      .addCase(addTransaction.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.error = action.error?.message;
@@ -85,7 +85,7 @@ const transactionSlice = createSlice({
         state.isLoading = true;
         state.isError = false;
       })
-      .builder.addCase(editTransaction.fulfilled, (state, action) => {
+      .addCase(editTransaction.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isError = false;
         const index = state.transactions.findIndex(
@@ -93,7 +93,7 @@ const transactionSlice = createSlice({
         );
         state.transactions[index] = action.payload;
       })
-      .builder.addCase(editTransaction.rejected, (state, action) => {
+      .addCase(editTransaction.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.error = action.error?.message;
@@ -103,12 +103,12 @@ const transactionSlice = createSlice({
         state.isLoading = true;
         state.isError = false;
       })
-      .builder.addCase(removeTransaction.fulfilled, (state, action) => {
+      .addCase(removeTransaction.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isError = false;
         state.transactions.filter((t) => t.id !== action.payload);
       })
-      .builder.addCase(removeTransaction.rejected, (state, action) => {
+      .addCase(removeTransaction.rejected, (state, action) => {
         state.isLoading = false;
         state.isError = true;
         state.error = action.error?.message;
