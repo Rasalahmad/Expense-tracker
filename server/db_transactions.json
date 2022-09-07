@@ -1,16 +1,16 @@
 {
   "transactions": [
     {
-      "id": 1,
       "name": "Salary from Google",
+      "amount": "145214",
       "type": "income",
-      "amount": 1000000
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Family Expenses",
+      "name": "Living Cost",
+      "amount": 200000,
       "type": "expense",
-      "amount": 200000
+      "id": 2
     },
     {
       "name": "Salary from Fyntune",
