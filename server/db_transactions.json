@@ -8,21 +8,15 @@
     },
     {
       "name": "Semester fee",
+      "amount": "15000",
       "type": "expense",
-      "amount": 10000,
       "id": 2
-    },
-    {
-      "name": "Living  cost",
-      "type": "expense",
-      "amount": 2500,
-      "id": 3
     },
     {
       "name": "Coaching",
       "type": "income",
-      "amount": 5000,
-      "id": 5
+      "amount": 50000,
+      "id": 3
     }
   ]
 }
