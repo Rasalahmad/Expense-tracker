@@ -8,7 +8,7 @@
     },
     {
       "name": "Living Cost",
-      "amount": 200000,
+      "amount": "20000",
       "type": "expense",
       "id": 2
     },
