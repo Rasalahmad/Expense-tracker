@@ -115,7 +115,9 @@ const transactionSlice = createSlice({
       .addCase(removeTransaction.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isError = false;
-        state.transactions.filter((t) => t.id !== action.payload);
+        state.transactions = state.transactions.filter(
+          (t) => t.id !== action.meta.arg
+        );
       })
       .addCase(removeTransaction.rejected, (state, action) => {
         state.isLoading = false;

@@ -1,28 +1,28 @@
 {
   "transactions": [
     {
-      "name": "Salary from Google",
-      "amount": "145214",
+      "name": "Salary from fyntune",
       "type": "income",
+      "amount": 25000,
       "id": 1
     },
     {
-      "name": "Living Cost",
-      "amount": "20000",
+      "name": "Semester fee",
       "type": "expense",
+      "amount": 10000,
       "id": 2
     },
     {
-      "name": "Salary from Fyntune",
-      "type": "income",
-      "amount": 25000,
+      "name": "Living  cost",
+      "type": "expense",
+      "amount": 2500,
       "id": 3
     },
     {
-      "name": "Semester Fee",
-      "type": "expense",
-      "amount": 10000,
-      "id": 4
+      "name": "Coaching",
+      "type": "income",
+      "amount": 5000,
+      "id": 5
     }
   ]
 }
